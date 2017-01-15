@@ -33,7 +33,7 @@ export default class Comments extends React.Component{
                 console.log('res', res);
             })
 
-    this.setState({ comment: [] });
+    //this.setState({ comment: [] });
 	}	
 
   componentDidMount() {
