@@ -8,7 +8,7 @@ const posts = require('./api/routes/posts');
 const PORT = process.env.PORT || 3000;
 var mongoURI = process.env.MONGODB_URI || "mongodb://localhost/reddit";
 
-console.log("PORT: ,mongoURI: ",PORT);
+console.log("PORT: ",PORT);
 console.log("mongoURI: ",mongoURI);
 app.use(express.static('public'));
 app.use(bodyParser.json());
