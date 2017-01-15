@@ -3,7 +3,7 @@ import { Link }  from 'react-router';
 
 export default class Main extends Component {
 	render() {
-		console.log("main....");
+		// console.log("main....");
 		return (
 			<div className="container">
 	      		<div className="jumbotron">
@@ -12,7 +12,9 @@ export default class Main extends Component {
 	      		</div>
 
 		      	<div className="row">
-		        	{/* This code will dump the correct Child Component */}
+		        	{/* This code will dump the correct 
+		        	Child Component */}
+		        	
 		        	{this.props.children}
 		      	</div>
 	    	</div>

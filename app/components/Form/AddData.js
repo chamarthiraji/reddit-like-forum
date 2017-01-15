@@ -34,7 +34,7 @@ export default class AddData extends React.Component{
    
     axios.post('/posts/postData/', localState
       ).then(function(response) {
-        console.log("handleSubmit:"+response.data);
+        //console.log("handleSubmit:"+response.data);
     });
 
 		this.setState({ author: "",
@@ -59,9 +59,11 @@ export default class AddData extends React.Component{
           			</h4>
 
               {/*
-                Note how each of the form elements has an id that matches the state.
+                Note how each of the form elements has an id 
+                  that matches the state.
                 This is not necessary but it is convenient.
-                Also note how each has an onChange event associated with our handleChange event.
+                Also note how each has an onChange event 
+                associated with our handleChange event.
               */}
 
           		<input

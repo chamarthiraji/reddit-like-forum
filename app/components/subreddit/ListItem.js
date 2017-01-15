@@ -8,25 +8,27 @@ import ViewComments from './ViewComments';
 export default class ListItem extends Component {
 	constructor(props){
 		super(props);
-		console.log("ListItem props",this.props.post
-			);
+		//console.log("ListItem props",this.props.post
+		//	);
 		
 	}
 	
 	render() {
 		return (
 			<div>
-				<li key={this.props.key} className="well">
+				<li className="well">
 
 					<p>{this.props.post.title}</p> 
 					<p>{this.props.post.content}</p> 
 						<Link to={`/comments/${this.props.post._id}`}>
-					comments</Link>
+							comments</Link>
 					
 
 					{/*
 
-						<Link to="/viewcomments" params={{ testvalue: "hello"}}> hi View Comments</Link>
+						<Link to="/viewcomments" 
+							params={{ testvalue: "hello"}}>
+							 hi View Comments</Link>
 
 
 						<ViewComments data={this.props.post.comments}/>
@@ -34,7 +36,9 @@ export default class ListItem extends Component {
 						<p>{this.props.post.content}</p> 
 
 						
-						<Link to={{pathname:'/viewcomments' ,query: {testvalue: "hello" }}}> hi 2View Comments</Link>
+						<Link to={{pathname:'/viewcomments' ,
+						query: {testvalue: "hello" }}}> 
+						hi 2View Comments</Link>
 
 
 					*/}

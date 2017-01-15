@@ -6,6 +6,7 @@ import AddData from '../Form/AddData';
 import ListItem from '../subreddit/ListItem';
 
 {/*	console.log("DetailForm props",props); */}
+
 export default class DetailForm extends Component {
 	constructor(props){
 		super(props);
@@ -22,9 +23,6 @@ export default class DetailForm extends Component {
 				<p>{this.props.data.comments}</p>
 				
 			</div>
-
-
-	      
 		);
 	}
 }

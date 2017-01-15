@@ -7,8 +7,8 @@
     "node": "4.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",    "start": "webpack -w"
-
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "start": "webpack -w"
   },
   "author": "",
   "license": "ISC",
