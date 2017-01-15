@@ -40,7 +40,7 @@ export default class Comments extends React.Component{
     console.log("comments js - componentDidUpdate");
     axios.get('/posts/comments/' + this.props.params.id).then(posts => {
     //  console.log("comments js - posts componentDidUpdate posts:"+JSON.stringify(posts));
-    console.log("comments js - posts componentDidUpdate posts 2:"+posts.data[0].comments[1]);
+    console.log("comments js - posts componentDidUpdate posts 2:"+posts.data[0].comments);
     this.setState({ comment: posts.data[0].comments });
     });
   }
