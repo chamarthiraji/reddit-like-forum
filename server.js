@@ -28,6 +28,9 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, (err) => {
+  if (err) {
+    return console.log('something bad happened on port:'+PORT, err)
+  }
 	console.log('server started on port: ', PORT);
 });
