@@ -20,7 +20,7 @@ router.get('/:subreddit', (req, res) => {
 
 router.get('/comments/:id', (req, res) => {
 //  console.log("router comments get",req.params);
-    let id = req.params.id;
+    var id = req.params.id;
     id = id.replace(/ /g, '');
 
     Post.find({
