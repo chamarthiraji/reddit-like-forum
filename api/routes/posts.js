@@ -7,7 +7,7 @@ const Post = require('../models/post');
 
 router.get('/:subreddit', (req, res) => {
     //	console.log("router get",req.params);
-	let subredditId = req.params.subreddit.toLowerCase();
+    var subredditId = req.params.subreddit.toLowerCase();
 	subredditId = subredditId.replace(/ /g, '');
 
 	Post.find({
